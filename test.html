@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/output.css" rel="stylesheet">
+</head>
+<body>
+  <!-- <main class="bg-gray-300 p-5"> -->
+<main class="p-5">
+    <h1 class="text-center text-lg text-blue-400">hello world</h1>
+  
+    <div class="my-4 h-20 w-full rounded-md border-2 border-violet-600 bg-violet-200 p-2">
+      <p class="text-5 text-center font-mono font-extrabold">some text</p>
+    </div>
+    <!-- <div class="h-20 w-20 bg-blue-500"> -->
+      <div class="fixed top-0 h-10 w-10 bg-red-500"></div>
+    <!-- </div> -->
+    <!-- <div class="flex justify-between space-x-6 space-y-2">
+      <div class="h-16 w-16 rounded-full bg-green-200"></div>
+      <div class="h-16 w-16 rounded-full bg-green-200"></div>
+      <div class="h-16 w-16 rounded-full bg-green-200"></div>
+    </div> -->
+  
+    <div class="grid grid-cols-3 gap-2">
+      <div class="h-12 bg-violet-400"></div>
+      <div class="h-12 bg-violet-400"></div>
+      <div class="h-12 bg-violet-400"></div>
+      <div class="h-12 bg-violet-400"></div>
+      <div class="h-12 bg-violet-400"></div>
+    </div>
+    <div class="hidden md:block">
+      <p>md:block hidden</p>
+    </div>
+    <div class="hidden max-md:block">
+      <p>max-md:block hidden</p>
+    </div>
+    <button class="my-2 rounded-lg bg-blue-500 px-4 py-2 text-white hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-800">click me</button>
+    <ul>
+      <li class="bg-white p-2 first:bg-yellow-100">item 1</li>
+      <li class="bg-white p-2 first:bg-yellow-100 odd:bg-gray-100 even:bg-gray-200">item 1</li>
+      <li class="bg-white p-2 first:bg-yellow-100 odd:bg-gray-100 even:bg-gray-200">item 1</li>
+      <li class="bg-white p-2 first:bg-yellow-100 odd:bg-gray-100 even:bg-gray-200">item 1</li>
+      <li class="bg-white p-2 first:bg-yellow-100 odd:bg-gray-100 even:bg-gray-200">item 1</li>
+    </ul>
+  
+    <div class="card">
+      <h3 class="text-base font-medium tracking-tight text-slate-900 dark:text-white">this is a text element</h3>
+      <p class="mt-2 text-sm text-slate-500 dark:text-blue-100">this is an even longer p tag element</p>
+      <button id="toggleDark" class="mt-8 rounded-md bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900" onclick="document.body.classList.toggle('dark')">Dark Mode</button>
+    </div>
+  
+    <p class="text-[14px] text-chestnut bg-[#d5d5d5] p-[16px]">Chestnut Color</p>
+    <button class="special-button">click</button>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded",()=>{
+        const toggleDark = document.getElementById('toggleDark')
+        toggleDark.addEventListener('click',function(){
+          if(document.document.classList.includes('dark')){
+            document.documentElement.classList.remove('dark')
+          }
+          else{
+            document.documentElement.classList.add('dark')
+          }
+          alert('click')
+        });
+      });
+    </script>
+  </main>
+  
+</body>
+</html>
